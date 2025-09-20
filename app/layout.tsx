@@ -4,6 +4,7 @@ import type { Metadata } from "next"
 import { Inter } from "next/font/google"
 import Script from "next/script"
 import Plasma from "@/components/plasma"
+import { ClientLayout } from "@/components/client-layout"
 
 const inter = Inter({ 
   subsets: ["latin"], 
@@ -106,7 +107,7 @@ export default function RootLayout({
             mouseInteractive={false}
           />
         </div> */}
-        <div className="relative z-10">{children}</div>
+        <ClientLayout>{children}</ClientLayout>
       </body>
     </html>
   )

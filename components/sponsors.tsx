@@ -189,7 +189,7 @@ export function Sponsors() {
         {/* Title */}
         <div ref={titleRef} className="text-center mb-8 sm:mb-12">
           <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold tracking-tight text-white mb-2 sm:mb-4">
-            Sponsorship <span className="text-orange-400">Opportunities</span>
+            Our <span className="text-orange-400">Sponsors</span>
           </h2>
           <p className="text-sm sm:text-base lg:text-lg text-gray-300 max-w-2xl mx-auto px-4">
             Partner with HaridwarElmas and reach millions of cricket fans worldwide

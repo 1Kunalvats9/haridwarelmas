@@ -148,8 +148,12 @@ export function Players() {
                     loading="lazy"
                   />
                 ) : (
-                  <span className="text-white font-bold text-sm sm:text-lg leading-none">
-                    {player.name.split(' ').map(n => n[0]).join('')}
+                  <span className="font-bold text-sm sm:text-lg leading-none">
+                    {player.name.split(' ').map((n, index) => (
+                      <span key={index} className={index === 0 ? "text-orange-400" : "text-white"}>
+                        {n[0]}
+                      </span>
+                    ))}
                   </span>
                 )}
               </div>
